@@ -565,7 +565,8 @@
           { "name": "3dtiles", "label": "3D Tiles" }, 
           { "name": "model", "label": "IFC Model" }, 
           { "name": "arcgis", "label": "ArcGIS" }, 
-          { "name": "cog", "label": "COG" }
+          { "name": "cog", "label": "COG" },
+          { "name": "geonode", "label": "GeoNode" }
         ]
       }
     },
