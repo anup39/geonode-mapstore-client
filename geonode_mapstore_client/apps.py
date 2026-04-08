@@ -134,7 +134,11 @@ def run_setup_hooks(*args, **kwargs):
             "executions",
             "thumbnail_url",
             "created",
-            "favorite"
+            "favorite",
+            "alternate",
+            "keywords",
+            "category",
+            "regions"
         ],
     }
     settings.REST_API_PRESETS["dataset_list"] = {
