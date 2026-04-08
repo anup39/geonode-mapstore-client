@@ -250,28 +250,28 @@
         };
 
         // override maps configuration with properties from setting.py
-        window.overrideNewMapConfig = function(config) {
-            if (config && config.map && config.map.layers) {
-                config.map.layers.push(...baseLayers);
-            }
-            config.map.sources = baseLayersSources;
-            config.map.projection = defaultMapCRS;
-            config.map.center = {
-                x: defaultMapCenterX,
-                y: defaultMapCenterY,
-                crs: defaultMapCRS
-            };
-            config.map.zoom = defaultMapZoom;
+        // window.overrideNewMapConfig = function(config) {
+        //     if (config && config.map && config.map.layers) {
+        //         config.map.layers.push(...baseLayers);
+        //     }
+        //     config.map.sources = baseLayersSources;
+        //     config.map.projection = defaultMapCRS;
+        //     config.map.center = {
+        //         x: defaultMapCenterX,
+        //         y: defaultMapCenterY,
+        //         crs: defaultMapCRS
+        //     };
+        //     config.map.zoom = defaultMapZoom;
 
-            config.catalogServices = config.catalogServices || { services: {} };
-            if (catalogueServices) {
-                config.catalogServices.services = Object.assign(config.catalogServices.services || {}, catalogueServices);
-            }
-            if (catalogueSelectedService) {
-                config.catalogServices.selectedService = catalogueSelectedService;
-            }
-            return config;
-        };
+        //     config.catalogServices = config.catalogServices || { services: {} };
+        //     if (catalogueServices) {
+        //         config.catalogServices.services = Object.assign(config.catalogServices.services || {}, catalogueServices);
+        //     }
+        //     if (catalogueSelectedService) {
+        //         config.catalogServices.selectedService = catalogueSelectedService;
+        //     }
+        //     return config;
+        // };
 
         // override new geostory configuration
         // window.overrideNewGeoStoryConfig = function(config) { return config; };
